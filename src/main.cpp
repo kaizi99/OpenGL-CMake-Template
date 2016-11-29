@@ -1,5 +1,5 @@
 #include <iostream>
-#include <glad/glad.h>
+#include <GL/gl3w.h>
 #include <GLFW/glfw3.h>
 #include <glm.hpp>
 
@@ -20,7 +20,7 @@ int main() {
 
   glfwMakeContextCurrent(window);
 
-  gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
+  gl3wInit();
 
   glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 
