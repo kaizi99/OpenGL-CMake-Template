@@ -20,6 +20,9 @@ add_subdirectory(dependencies/glfw)
 add_library(glad dependencies/glad/glad.c)
 include_directories(dependencies/glad/include)
 
+# Use GLM
+include_directories(dependencies/glm/include)
+
 # Define the executable
 add_executable(OGL ${SRC})
 target_link_libraries(OGL glfw glad)
